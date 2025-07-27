@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sentiment Analyzer</h1>
+            <p class="subtitle">Analyze the emotional tone of your text</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <textarea id="text-input" placeholder="Enter your text here to analyze its sentiment..."></textarea>
+                <button id="analyze-btn">Analyze Sentiment</button>
+            </div>
+
+            <div class="results-section" id="results">
+                <div class="result-card hidden" id="result-card">
+                    <h2>Analysis Results</h2>
+                    <div class="sentiment-meter">
+                        <div class="meter">
+                            <div class="meter-bar" id="sentiment-bar"></div>
+                        </div>
+                        <div class="meter-labels">
+                            <span>Negative</span>
+                            <span>Neutral</span>
+                            <span>Positive</span>
+                        </div>
+                    </div>
+                    <div class="sentiment-score">
+                        <p>Sentiment Score: <span id="score-value">0</span></p>
+                        <p>Sentiment: <span id="sentiment-label">Neutral</span></p>
+                    </div>
+                    <div class="word-analysis">
+                        <div class="positive-words">
+                            <h3>Positive Words</h3>
+                            <ul id="positive-list"></ul>
+                        </div>
+                        <div class="negative-words">
+                            <h3>Negative Words</h3>
+                            <ul id="negative-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created with ❤️ | Sentiment Analysis Tool</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
