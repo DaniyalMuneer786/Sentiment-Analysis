@@ -79,12 +79,6 @@ Edit
 
 ---
 
-## 🖼️ Screenshot
-
-> *(Insert image of your interface here for better visual explanation)*
-
----
-
 ## ✅ Conclusion
 
 This project demonstrates how machine learning can be used for real-time sentiment analysis. It’s useful for analyzing feedback, social media posts, or YouTube comments quickly and accurately.
